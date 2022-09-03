@@ -6,7 +6,7 @@ const Home = () => {
     data: blogs,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch("https://dipali-blogsapp.herokuapp.com/api/blogs");
   return (
     <div className="home">
       {error && <div> {error} </div>}

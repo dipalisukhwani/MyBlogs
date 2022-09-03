@@ -8,10 +8,10 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("https://dipali-blogsapp.herokuapp.com/api/blogs/" + id);
 
   const handleClick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
+    fetch("https://dipali-blogsapp.herokuapp.com/api/blogs/" + blog.id, {
       method: "DELETE",
     }).then(() => {
       history.push("/");
